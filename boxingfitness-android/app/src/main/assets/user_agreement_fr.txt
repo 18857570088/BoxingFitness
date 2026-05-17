@@ -1,0 +1,53 @@
+Contrat d'utilisation de l'application BoxingFitness
+Version : V1.4
+Date d'entree en vigueur : 2026-05-16
+
+# 1. Apercu
+Le present contrat regit votre utilisation de l'application BoxingFitness et des services associes fournis par Shaoxing Weimai Technology Co., Ltd. En telechargeant, installant, vous connectant ou utilisant l'application, vous acceptez le present contrat.
+
+# 2. Services
+BoxingFitness fournit actuellement :
+- la recherche Bluetooth, la connexion associee des gants intelligents gauche/droit, l'etat de connexion et l'affichage de la batterie ;
+- les reglages de sensibilite, le controle des appareils au debut ou a la fin de l'entrainement, et la reconnaissance des evenements de coup Bluetooth ;
+- les modules Color Graffiti, Emotion Champ, Free Boxing, Rapid Fat Burn, Fat Burn Challenge et Fat Burn Coach ;
+- les historiques, resultats, classements, profils, reglages de langue et services de synchronisation.
+
+# 3. Conditions d'utilisation
+- L'application actuelle peut etre utilisee directement apres installation et n'effectue plus de verification par numero de serie ou code d'activation.
+- Les fonctions necessitant des gants intelligents doivent d'abord connecter dans les reglages les gants gauche et droit portant le meme numero d'appareil.
+- Vous devez vous assurer que l'environnement est sur, que votre condition physique permet l'exercice et que l'intensite d'entrainement est raisonnable.
+
+# 4. Donnees d'entrainement et regles de classement
+- Le nombre de coups, les coups gauche/droite, la duree, les calories, la graisse brulee, les resultats d'etape et les resultats de plan peuvent etre utilises pour les rapports, les resultats, les statistiques de profil et les classements.
+- Les classements peuvent afficher le meilleur nombre de coups du jour, les coups cumules, la duree cumulee, les calories cumulees, la graisse brulee cumulee et le niveau.
+- Les calories et la graisse brulee sont des estimations fournies uniquement pour le retour d'entrainement et ne constituent pas une promesse medicale, nutritionnelle, de rehabilitation, de certification sportive ou de perte de poids.
+
+# 5. Conduite de l'utilisateur
+Vous ne devez pas falsifier les donnees d'entrainement, manipuler les classements, usurper un compte, perturber la communication Bluetooth, desosser l'application, nuire a la stabilite du service ou porter atteinte aux utilisateurs, appareils, serveurs ou a l'exploitant.
+
+# 6. Utilisation des appareils Bluetooth
+- L'application connecte les gants de boxe intelligents par Bluetooth et compte les coups selon les evenements renvoyes par les appareils.
+- Au debut, a la fin ou lorsque le compte a rebours atteint zero, l'application peut envoyer des commandes de gyroscope, de sensibilite et d'autres commandes de controle.
+- Les problemes lies a la batterie, la distance, les obstacles, l'etat Bluetooth du systeme, les interferences ou une panne materielle peuvent affecter l'experience d'entrainement.
+
+# 7. Propriete intellectuelle
+Le code logiciel, l'interface, la logique d'entrainement, les regles de classement, les textes, les graphiques et les contenus associes appartiennent a Shaoxing Weimai Technology Co., Ltd. ou aux titulaires de droits concernes. Vous ne pouvez pas les copier, adapter, diffuser ou exploiter commercialement sans autorisation.
+
+# 8. Modification, suspension et resiliation
+Nous pouvons modifier, suspendre ou resilier une partie des services pour maintenance, mise a niveau, correction, ajustement serveur, strategie produit ou conformite legale, tout en protegeant raisonnablement les donnees et droits existants des utilisateurs.
+
+# 9. Avertissement
+BoxingFitness est destine a l'entrainement de boxe, au soulagement emotionnel et au retour d'exercice de combustion des graisses. Il ne remplace pas les conseils de medecins, coachs ou organismes professionnels. Vous devez vous entrainer selon votre condition physique et assumer les risques lies a un exercice inapproprie.
+
+# 10. Confidentialite
+Nous traitons les informations personnelles conformement a la Politique de confidentialite de l'application BoxingFitness.
+
+# 11. Mises a jour
+Nous pouvons mettre a jour le present contrat lorsque les fonctions ou les lois changent. La poursuite de l'utilisation de l'application vaut acceptation du contrat mis a jour.
+
+# 12. Droit applicable
+Le present contrat est regi par les lois de la Republique populaire de Chine.
+
+# 13. Contact
+- Exploitant : Shaoxing Weimai Technology Co., Ltd.
+- Veuillez consulter la page A propos ou les informations developpeur dans l'application pour les coordonnees actuelles.

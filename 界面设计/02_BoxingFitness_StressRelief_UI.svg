@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="390" height="844" viewBox="0 0 390 844"
+     xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Boxing Fitness — Stress Relief Mode UI (390×844 iPhone)</title>
+  <desc>减压模式界面 冷静蓝色调。深海蓝背景，柔和蓝色拳套，情绪宣泄计数，低频宁静波形，自由击打，无失败机制。</desc>
+
+  <defs>
+    <linearGradient id="sr_bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#040C1E"/>
+      <stop offset="100%" stop-color="#081428"/>
+    </linearGradient>
+    <linearGradient id="sr_glove_L" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#2266EE"/>
+      <stop offset="100%" stop-color="#041880"/>
+    </linearGradient>
+    <linearGradient id="sr_glove_R" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#2266EE"/>
+      <stop offset="100%" stop-color="#041880"/>
+    </linearGradient>
+    <linearGradient id="sr_glove_hi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#4488FF"/>
+      <stop offset="100%" stop-color="#1A55DD"/>
+    </linearGradient>
+    <linearGradient id="sr_cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#010C40"/>
+      <stop offset="100%" stop-color="#000620"/>
+    </linearGradient>
+    <linearGradient id="sr_stress_bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#0044AA"/>
+      <stop offset="100%" stop-color="#0088DD"/>
+    </linearGradient>
+    <linearGradient id="sr_btn" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#0033AA"/>
+      <stop offset="100%" stop-color="#0066CC"/>
+    </linearGradient>
+    <linearGradient id="sr_ecg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#1A55CC"/>
+      <stop offset="50%"  stop-color="#2288FF"/>
+      <stop offset="100%" stop-color="#1A55CC"/>
+    </linearGradient>
+    <radialGradient id="sr_ring_outer" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#0066FF" stop-opacity="0"/>
+      <stop offset="70%"  stop-color="#0066FF" stop-opacity="0.10"/>
+      <stop offset="100%" stop-color="#0066FF" stop-opacity="0.26"/>
+    </radialGradient>
+    <radialGradient id="sr_ring_inner" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#0044CC" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#0044CC" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sr_press" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#2266FF" stop-opacity="0.80"/>
+      <stop offset="100%" stop-color="#0033BB" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sr_center_glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#0055CC" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#0055CC" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- ── 背景 ── -->
+  <rect width="390" height="844" fill="url(#sr_bg)"/>
+
+  <!-- ── 状态栏 ── -->
+  <rect x="0" y="0" width="390" height="54" fill="#030A18" opacity="0.85"/>
+  <text x="30"  y="36" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="15" font-weight="600" fill="#4488BB" opacity="0.8">9:41</text>
+  <text x="360" y="36" text-anchor="end"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="13" fill="#4488BB" opacity="0.8">WiFi  🔋</text>
+
+  <!-- ── 顶部导航 ── -->
+  <text x="30"  y="96" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="16" fill="#2266AA" opacity="0.8">← 返回</text>
+  <text x="195" y="96" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="17" font-weight="700" fill="#88BBEE">Stress Relief</text>
+  <text x="360" y="96" text-anchor="end"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="14" fill="#2266AA" opacity="0.8">历史</text>
+
+  <!-- ── 模式副标题 ── -->
+  <text x="195" y="126" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="13" fill="#3366AA">情绪宣泄 · 自由击打 · 无失败机制</text>
+
+  <!-- ── 情绪压力指数条 ── -->
+  <rect x="30" y="148" width="330" height="44" rx="22" fill="#080E22"/>
+  <rect x="30" y="148" width="198" height="44" rx="22" fill="url(#sr_stress_bar)" opacity="0.85"/>
+  <text x="50"  y="176" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="13" fill="#88CCFF">压力指数</text>
+  <text x="350" y="176" text-anchor="end"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="14" font-weight="700" fill="#44AAFF">60%</text>
+
+  <!-- ── 情绪状态标签行 ── -->
+  <rect x="30"  y="206" width="80"  height="28" rx="14" fill="#0A1A44" stroke="#1A3A88" stroke-width="0.8"/>
+  <text x="70"  y="225" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="11" fill="#4488CC">焦虑</text>
+  <rect x="120" y="206" width="80"  height="28" rx="14" fill="#0055BB" stroke="#0077EE" stroke-width="0.8"/>
+  <text x="160" y="225" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="11" font-weight="600" fill="#AACCFF">压力</text>
+  <rect x="210" y="206" width="80"  height="28" rx="14" fill="#0A1A44" stroke="#1A3A88" stroke-width="0.8"/>
+  <text x="250" y="225" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="11" fill="#4488CC">疲惫</text>
+  <rect x="300" y="206" width="80"  height="28" rx="14" fill="#0A1A44" stroke="#1A3A88" stroke-width="0.8"/>
+  <text x="340" y="225" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="11" fill="#4488CC">委屈</text>
+
+  <!-- ── 主视觉区：呼吸圆环 ── -->
+  <!-- 外环 -->
+  <circle cx="195" cy="450" r="155" fill="url(#sr_ring_outer)"/>
+  <circle cx="195" cy="450" r="155" fill="none" stroke="#0055BB" stroke-width="1.4"
+          stroke-dasharray="17.1,25.6" opacity="0.40"/>
+  <!-- 中环 -->
+  <circle cx="195" cy="450" r="112" fill="url(#sr_ring_inner)"/>
+  <circle cx="195" cy="450" r="112" fill="none" stroke="#0066DD" stroke-width="2.6" opacity="0.22"/>
+  <!-- 内圆发光 -->
+  <circle cx="195" cy="450" r="80"  fill="url(#sr_center_glow)"/>
+
+  <!-- ── LEFT GLOVE（简化版，fit圆环）── -->
+  <g transform="translate(195,450) rotate(-22) translate(-85,-112)">
+    <rect x="0"   y="51"  width="85"  height="119" rx="24" fill="url(#sr_glove_L)" opacity="0.92"/>
+    <rect x="6.1" y="4.3" width="72.3" height="59.8" rx="22" fill="url(#sr_glove_hi)" opacity="0.88"/>
+    <rect x="0"   y="136" width="85"  height="34"  rx="17" fill="url(#sr_cuff)" opacity="0.88"/>
+    <rect x="12.2" y="12.8" width="36.5" height="9.4" rx="4.7" fill="white" opacity="0.30"/>
+    <rect x="12.2" y="68"  width="61"  height="4.3" rx="2.1" fill="white" opacity="0.14"/>
+    <rect x="12.2" y="80"  width="61"  height="4.3" rx="2.1" fill="white" opacity="0.14"/>
+    <!-- IMU芯片 -->
+    <rect x="57.5" y="9.4" width="24.4" height="24.4" rx="5.1"
+          fill="#010820" stroke="#00CCFF" stroke-width="2.6" opacity="0.92"/>
+    <circle cx="69.7" cy="21.5" r="4.5" fill="#00CCFF" opacity="0.95"/>
+    <line x1="57.5" y1="21.5" x2="50"   y2="21.5" stroke="#00CCFF" stroke-width="1.8" opacity="0.70"/>
+    <line x1="81.9" y1="21.5" x2="85"   y2="21.5" stroke="#00CCFF" stroke-width="1.8" opacity="0.70"/>
+    <line x1="69.7" y1="9.4"  x2="69.7" y2="4.3"  stroke="#00CCFF" stroke-width="1.8" opacity="0.70"/>
+    <line x1="69.7" y1="33.8" x2="69.7" y2="38.9" stroke="#00CCFF" stroke-width="1.8" opacity="0.70"/>
+    <!-- 压力传感器点阵 -->
+    <ellipse cx="42.5" cy="95.2" rx="22.4" ry="18.1" fill="url(#sr_press)" opacity="0.38"/>
+    <circle cx="30.5" cy="85.8" r="3.0" fill="#44AAFF" opacity="0.66"/>
+    <circle cx="42.5" cy="85.8" r="3.0" fill="#44AAFF" opacity="0.66"/>
+    <circle cx="54.5" cy="85.8" r="3.0" fill="#44AAFF" opacity="0.66"/>
+    <circle cx="30.5" cy="95.2" r="3.0" fill="#66CCFF" opacity="0.75"/>
+    <circle cx="42.5" cy="95.2" r="4.3"  fill="#FFFFFF"  opacity="0.88"/>
+    <circle cx="54.5" cy="95.2" r="3.0" fill="#66CCFF" opacity="0.75"/>
+    <circle cx="30.5" cy="104.7" r="3.0" fill="#44AAFF" opacity="0.66"/>
+    <circle cx="42.5" cy="104.7" r="3.0" fill="#44AAFF" opacity="0.66"/>
+    <circle cx="54.5" cy="104.7" r="3.0" fill="#44AAFF" opacity="0.66"/>
+    <!-- 护腕LED -->
+    <rect x="10.2" y="140" width="65.1" height="9.4" rx="4.7" fill="url(#sr_btn)" opacity="0.70"/>
+  </g>
+
+  <!-- ── RIGHT GLOVE ── -->
+  <g transform="translate(195,450) rotate(22) translate(0,-112)">
+    <rect x="0"   y="51"  width="85"  height="119" rx="24" fill="url(#sr_glove_R)" opacity="0.92"/>
+    <rect x="6.1" y="4.3" width="72.3" height="59.8" rx="22" fill="url(#sr_glove_hi)" opacity="0.88"/>
+    <rect x="0"   y="136" width="85"  height="34"  rx="17" fill="url(#sr_cuff)" opacity="0.88"/>
+    <rect x="12.2" y="12.8" width="36.5" height="9.4" rx="4.7" fill="white" opacity="0.30"/>
+    <rect x="12.2" y="68"  width="61"  height="4.3" rx="2.1" fill="white" opacity="0.14"/>
+    <rect x="12.2" y="80"  width="61"  height="4.3" rx="2.1" fill="white" opacity="0.14"/>
+    <!-- IMU芯片 -->
+    <rect x="3.1"  y="9.4" width="24.4" height="24.4" rx="5.1"
+          fill="#010820" stroke="#00CCFF" stroke-width="2.6" opacity="0.92"/>
+    <circle cx="15.3" cy="21.5" r="4.5" fill="#00CCFF" opacity="0.95"/>
+    <line x1="27.5" y1="21.5" x2="35"   y2="21.5" stroke="#00CCFF" stroke-width="1.8" opacity="0.70"/>
+    <line x1="3.1"  y1="21.5" x2="0"    y2="21.5" stroke="#00CCFF" stroke-width="1.8" opacity="0.70"/>
+    <line x1="15.3" y1="9.4"  x2="15.3" y2="4.3"  stroke="#00CCFF" stroke-width="1.8" opacity="0.70"/>
+    <line x1="15.3" y1="33.8" x2="15.3" y2="38.9" stroke="#00CCFF" stroke-width="1.8" opacity="0.70"/>
+    <!-- 压力传感器 -->
+    <ellipse cx="42.5" cy="95.2" rx="22.4" ry="18.1" fill="url(#sr_press)" opacity="0.38"/>
+    <circle cx="30.5" cy="85.8" r="3.0" fill="#44AAFF" opacity="0.66"/>
+    <circle cx="42.5" cy="85.8" r="3.0" fill="#44AAFF" opacity="0.66"/>
+    <circle cx="54.5" cy="85.8" r="3.0" fill="#44AAFF" opacity="0.66"/>
+    <circle cx="30.5" cy="95.2" r="3.0" fill="#66CCFF" opacity="0.75"/>
+    <circle cx="42.5" cy="95.2" r="4.3"  fill="#FFFFFF"  opacity="0.88"/>
+    <circle cx="54.5" cy="95.2" r="3.0" fill="#66CCFF" opacity="0.75"/>
+    <circle cx="30.5" cy="104.7" r="3.0" fill="#44AAFF" opacity="0.66"/>
+    <circle cx="42.5" cy="104.7" r="3.0" fill="#44AAFF" opacity="0.66"/>
+    <circle cx="54.5" cy="104.7" r="3.0" fill="#44AAFF" opacity="0.66"/>
+    <rect x="10.2" y="140" width="65.1" height="9.4" rx="4.7" fill="url(#sr_btn)" opacity="0.70"/>
+  </g>
+
+  <!-- ── 中央计数 ── -->
+  <text x="195" y="432" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="72" font-weight="700" fill="#FFFFFF" opacity="0.95">247</text>
+  <text x="195" y="464" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="16" fill="#4488BB">次击打</text>
+  <!-- 今日时长 -->
+  <text x="195" y="490" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="13" fill="#2255AA">已持续 08:32</text>
+
+  <!-- ── 低频宁静 ECG 波形 ── -->
+  <rect x="0" y="590" width="390" height="80" fill="#030910" opacity="0.60"/>
+  <text x="30" y="610" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="11" fill="#2255AA">声音波形 · 低频宁静</text>
+  <polyline
+    points="30,645 58,645 72,625 86,660 100,618 114,645 138,645 162,645 176,638 190,645 214,645 228,645 242,630 256,645 270,645 290,645 304,638 318,645 342,645 360,645"
+    fill="none" stroke="url(#sr_ecg)"
+    stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity="0.75"/>
+  <circle cx="100" cy="618" r="5.1" fill="#0088FF" opacity="0.85"/>
+  <circle cx="242" cy="630" r="5.1" fill="#0088FF" opacity="0.85"/>
+
+  <!-- ── 数据卡片行 ── -->
+  <rect x="30"  y="688" width="100" height="72" rx="14" fill="#070F24" stroke="#0A1E4A" stroke-width="0.8"/>
+  <text x="80"  y="715" text-anchor="middle" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#3366AA">卡路里</text>
+  <text x="80"  y="742" text-anchor="middle" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#4488FF">84</text>
+  <text x="80"  y="756" text-anchor="middle" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" fill="#1A3366">kcal</text>
+
+  <rect x="145" y="688" width="100" height="72" rx="14" fill="#070F24" stroke="#0A1E4A" stroke-width="0.8"/>
+  <text x="195" y="715" text-anchor="middle" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#3366AA">峰值力度</text>
+  <text x="195" y="742" text-anchor="middle" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#4488FF">73%</text>
+  <text x="195" y="756" text-anchor="middle" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" fill="#1A3366">Max Force</text>
+
+  <rect x="260" y="688" width="100" height="72" rx="14" fill="#070F24" stroke="#0A1E4A" stroke-width="0.8"/>
+  <text x="310" y="715" text-anchor="middle" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#3366AA">情绪恢复</text>
+  <text x="310" y="742" text-anchor="middle" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#44AAFF">40%</text>
+  <text x="310" y="756" text-anchor="middle" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" fill="#1A3366">Progress</text>
+
+  <!-- ── 提示文字 ── -->
+  <text x="195" y="790" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="13" fill="#1A3A66">自由出拳 · 无需规则 · 想打多久打多久</text>
+
+  <!-- ── 底部按钮 ── -->
+  <rect x="30"  y="804" width="155" height="52" rx="26" fill="url(#sr_btn)" opacity="0.85"/>
+  <text x="107" y="836" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="15" font-weight="600" fill="#88CCFF">完成宣泄</text>
+  <rect x="205" y="804" width="155" height="52" rx="26" fill="#070F24" stroke="#0A2A66" stroke-width="1"/>
+  <text x="282" y="836" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="15" font-weight="600" fill="#3366AA">继续出拳</text>
+
+</svg>

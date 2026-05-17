@@ -1,0 +1,61 @@
+BoxingFitness APP Privacy Policy
+Version: V1.4
+Effective Date: 2026-05-16
+
+# 1. Scope
+This Privacy Policy applies to the BoxingFitness APP and related services provided by Shaoxing Weimai Technology Co., Ltd., including Bluetooth smart boxing glove connection, training modules, workout records, workout results, leaderboards, profile, language settings, sensitivity settings, and data sync.
+
+# 2. Information We Process
+## 1. User and account information
+- To support profile, workout records, leaderboards, cloud sync, and basic authentication, we may process user identifiers, login or authentication status, nickname, avatar, language, region, tier, achievements, and display profile data.
+- The current APP can be used directly after installation and no longer performs serial-number or activation-code verification. We do not require you to submit a serial number or activation code to start using the APP.
+
+## 2. Bluetooth device information
+- The APP uses Bluetooth to scan and connect smart boxing gloves whose names follow the BOXING#L/R plus six-character device-number rule.
+- To connect left and right gloves, recognize hits, and control training, we may process device name, left/right hand identifier, device number, Bluetooth address, connection state, battery level, signal strength, sensitivity setting, hit events, device communication state, and necessary troubleshooting logs.
+- The APP may send training start/end, gyroscope on/off, sensitivity, and other control commands to the gloves.
+
+## 3. Training and workout data
+- The APP includes Color Graffiti, Emotion Champ, Free Boxing, Rapid Fat Burn, Fat Burn Challenge, and Fat Burn Coach.
+- We may process punch count, left/right hits, training duration, countdown, intensity, calories, fat burn, stage results, plan results, history, and statistics by day, week, month, year, and total.
+- Calories, fat burn, and intensity are estimates or display results based on training activity. They are provided only for workout feedback and experience display, and do not constitute medical, nutrition, rehabilitation, weight-loss, or competition-certification promises.
+
+## 4. Leaderboards and public display
+- Leaderboards may display nickname, avatar or default avatar, tier, rank, daily best punches, cumulative punches, cumulative training duration, cumulative calories, and cumulative fat burn.
+- Except for leaderboard display, content you actively share, or legal requirements, we do not publicly disclose your personal information.
+
+## 5. Technical logs
+- To keep the APP stable and troubleshoot Bluetooth connection and data sync issues, we may process device model, OS version, APP version, network state, request status, error logs, Bluetooth connection logs, and sync status.
+- Technical logs are used only for troubleshooting, service maintenance, security auditing, and experience improvement.
+
+# 3. Permissions
+- Bluetooth: used to scan and connect smart boxing gloves, read battery level, hit events and device state, and send training control, gyroscope, and sensitivity commands.
+- Network: used for account or user-identifier services, workout record sync, leaderboard queries, profile updates, and necessary service requests.
+- Photos or storage: used to select avatars, cache images, and generate or share workout result content.
+- The current APP recognizes punches through smart-glove sensors and Bluetooth hit events. It does not rely on microphone recording or sound recognition, and we do not collect voice or audio samples for punch counting.
+
+# 4. Local and Cloud Storage
+- Local storage may include language settings, Bluetooth device information, last connected devices, sensitivity settings, avatar URI, workout cache, pending sync records, and necessary configuration.
+- Cloud storage may include profile data, workout records, workout results, leaderboard metrics, sync status, and necessary service logs.
+- If network or cloud service is temporarily unavailable, the APP may continue recording part of the training data locally and try to sync it after service recovers.
+
+# 5. Sharing, Transfer, and Public Disclosure
+- We do not sell your personal information to unrelated third parties.
+- To provide core services, necessary data may flow between our account service, workout record service, leaderboard service, and databases.
+- In the event of merger, division, or asset transfer, we will require the new holder to continue to comply with this Policy.
+
+# 6. Security
+We use reasonable security measures, including access control, service isolation, database permission management, audit logs, and least-privilege principles. No Internet environment is absolutely secure. Please protect your account information and avoid using the APP on untrusted devices or networks.
+
+# 7. Your Rights
+You may view and update profile data, language settings, avatar, and certain preferences in the APP. Where required by law, you may contact us to request correction, deletion, or restriction of certain personal-information processing.
+
+# 8. Minors
+If you are a minor, please use the APP under guardian supervision and train according to your physical condition.
+
+# 9. Updates
+We may update this Policy when product features, data-processing methods, or laws change. If an update materially affects your rights, we will notify you through the APP or another reasonable method.
+
+# 10. Contact
+- Operator: Shaoxing Weimai Technology Co., Ltd.
+- Please refer to the in-app About Us or developer information page for current contact information.

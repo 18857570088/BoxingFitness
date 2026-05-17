@@ -1,0 +1,24 @@
+{
+  "monsters": [
+    { "name": "拖延", "id": "tuoyan", "images": ["tuoyan_01.png","tuoyan_02.png","tuoyan_03.png"] },
+    { "name": "愤怒", "id": "fennu", "images": ["fennu_01.png","fennu_02.png"] },
+    { "name": "焦虑", "id": "jiaolv", "images": ["jiaolv_01.png","jiaolv_02.png"] },
+    { "name": "压力", "id": "yali", "images": ["yali_01.png"] },
+    { "name": "内耗", "id": "neihao", "images": ["neihao_01.png"] },
+    { "name": "社恐", "id": "shekong", "images": ["shekong_01.png"] },
+    { "name": "自卑", "id": "zibei", "images": ["zibei_01.png"] },
+    { "name": "失眠", "id": "shimian", "images": ["shimian_01.png"] },
+    { "name": "空虚", "id": "kongxu", "images": ["kongxu_01.png"] },
+    { "name": "疲惫", "id": "pibei", "images": ["pibei_01.png"] },
+    { "name": "比较", "id": "bijiao", "images": ["bijiao_01.png"] },
+    { "name": "后悔", "id": "houhui", "images": ["houhui_01.png"] },
+    { "name": "犹豫", "id": "youyu", "images": ["youyu_01.png"] },
+    { "name": "孤独", "id": "gudu", "images": ["gudu_01.png"] },
+    { "name": "控制", "id": "kongzhi", "images": ["kongzhi_01.png"] },
+    { "name": "内疚", "id": "neijiu", "images": ["neijiu_01.png"] },
+    { "name": "完美", "id": "wanmei", "images": ["wanmei_01.png"] },
+    { "name": "金钱焦虑", "id": "jinrong", "images": ["jinrong_01.png"] },
+    { "name": "时间焦虑", "id": "shijian", "images": ["shijian_01.png"] },
+    { "name": "信息过载", "id": "xinxi", "images": ["xinxi_01.png"] }
+  ]
+}

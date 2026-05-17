@@ -1,0 +1,24 @@
+﻿新线程名称：BoxingFitness
+
+请在确保原项目不受影响的前提下，继续开发 BoxingFitness 新项目。
+
+项目要求：
+- 新项目名称：BoxingFitness
+- 内部代号：BoxingFitness
+- 本地根目录：D:\2026\202604\0415
+- Android 源码目录：D:\2026\202604\0415\BoxingFitness-android
+- 服务端源码目录：D:\2026\202604\0415\BoxingFitness-server
+- 沿用原项目认证、榜单、训练记录、成就、蓝牙击中识别与训练体系
+- APP 显示名称改为 BoxingFitness
+- Android applicationId 改为 com.zclei.BoxingFitness
+- 新数据库名：smartbox
+- 云端服务目录：/opt/BoxingFitness-auth
+- 上传目录：/opt/BoxingFitness-auth/uploads
+- 日志目录：/var/log/BoxingFitness-auth
+- systemd 服务名：BoxingFitness-auth.service
+- 服务端口：127.0.0.1:8011
+- Nginx 入口：/BoxingFitness/
+- APP API Base URL：http://152.136.62.157/BoxingFitness/api/v1/
+
+请先检查本地目录结构，然后开始修改 Android APP 标识和接口地址，再进行服务端、数据库和 Nginx 独立部署。
+

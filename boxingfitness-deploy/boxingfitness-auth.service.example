@@ -1,0 +1,19 @@
+[Unit]
+Description=BoxingFitness API Service
+After=network.target
+
+[Service]
+User=ubuntu
+Group=ubuntu
+WorkingDirectory=/opt/boxingfitness-auth
+EnvironmentFile=/etc/boxingfitness-auth.env
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/boxingfitness-auth/.venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8012
+Restart=always
+RestartSec=3
+LogsDirectory=boxingfitness-auth
+StandardOutput=append:/var/log/boxingfitness-auth/boxingfitness-auth.log
+StandardError=append:/var/log/boxingfitness-auth/boxingfitness-auth.err.log
+
+[Install]
+WantedBy=multi-user.target

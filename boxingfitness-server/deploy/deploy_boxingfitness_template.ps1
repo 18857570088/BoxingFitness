@@ -1,0 +1,11 @@
+python D:\2026\202604\0425\boxingfitness-server\deploy\deploy_remote_single.py `
+  --host 152.136.62.157 `
+  --username <ssh-user> `
+  --password <ssh-password> `
+  --db-host 152.136.62.157 `
+  --db-name BoxingFitness `
+  --db-user <db-user> `
+  --db-password <db-password> `
+  --server-name 152.136.62.157 `
+  --local-root D:\2026\202604\0425\boxingfitness-server `
+  --remote-dir /opt/boxingfitness-auth

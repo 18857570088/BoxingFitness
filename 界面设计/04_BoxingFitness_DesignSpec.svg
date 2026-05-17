@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="680" viewBox="0 0 900 680"
+     xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Boxing Fitness — Visual Identity Design Specification</title>
+  <desc>三套视觉体系色彩规范：主图标深蓝色Token、减压模式冷蓝色Token、燃脂模式橙红色Token，以及输出规格与心理学依据。</desc>
+
+  <!-- 背景 -->
+  <rect width="900" height="680" fill="#0A0A10"/>
+  <rect x="0" y="0" width="900" height="680" fill="#050508"/>
+
+  <!-- ══ 标题 ══ -->
+  <text x="450" y="46" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="22" font-weight="700" fill="#FFFFFF">Boxing Fitness — Visual Identity System</text>
+  <text x="450" y="70" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="13" fill="#555560">三套视觉体系 · 色彩规范 · 输出规格 · 心理学依据</text>
+
+  <!-- 分割线 -->
+  <line x1="40" y1="86" x2="860" y2="86" stroke="#1A1A28" stroke-width="1"/>
+
+  <!-- ══ COL 1: 主图标 ══ -->
+  <!-- 列头 -->
+  <rect x="40" y="96" width="255" height="36" rx="8" fill="#0A1830"/>
+  <text x="167" y="120" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="13" font-weight="700" fill="#40AAFF">主图标  App Store  深蓝极简版</text>
+
+  <!-- 色块 + Token -->
+  <rect x="40"  y="144" width="255" height="26" rx="5" fill="#050C1A"/>
+  <text x="56"  y="162" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#AAAACC">深空背景</text>
+  <text x="286" y="162" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#40AAFF">#050C1A</text>
+
+  <rect x="40"  y="178" width="255" height="26" rx="5" fill="#0A1A38"/>
+  <text x="56"  y="196" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#AAAACC">背景渐变终点</text>
+  <text x="286" y="196" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#40AAFF">#0A1A38</text>
+
+  <rect x="40"  y="212" width="124" height="26" rx="5" fill="#1A6AFF"/>
+  <rect x="171" y="212" width="124" height="26" rx="5" fill="#041880"/>
+  <text x="56"  y="230" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">拳套主色起点</text>
+  <text x="286" y="230" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#40AAFF">#1A6AFF → #041880</text>
+
+  <rect x="40"  y="246" width="124" height="26" rx="5" fill="#60AAFF"/>
+  <rect x="171" y="246" width="124" height="26" rx="5" fill="#1868D8"/>
+  <text x="56"  y="264" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#0A0A20">拳套高光渐变</text>
+  <text x="286" y="264" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#40AAFF">#60AAFF → #1868D8</text>
+
+  <rect x="40"  y="280" width="255" height="26" rx="5" fill="#021060"/>
+  <text x="56"  y="298" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#AAAACC">护腕深色</text>
+  <text x="286" y="298" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#40AAFF">#021060</text>
+
+  <rect x="40"  y="314" width="255" height="26" rx="5" fill="#00CCFF"/>
+  <text x="56"  y="332" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#002244">IMU节点 · X轴轨迹</text>
+  <text x="286" y="332" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#002244">#00CCFF</text>
+
+  <rect x="40"  y="348" width="124" height="26" rx="5" fill="#4488FF"/>
+  <rect x="171" y="348" width="124" height="26" rx="5" fill="#2244CC"/>
+  <text x="56"  y="366" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">Y轴 / Z轴轨迹</text>
+  <text x="286" y="366" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#40AAFF">#4488FF · #2244CC</text>
+
+  <rect x="40"  y="382" width="124" height="26" rx="5" fill="#0080FF"/>
+  <rect x="171" y="382" width="124" height="26" rx="5" fill="#00C8FF"/>
+  <text x="56"  y="400" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">ECG波形渐变</text>
+  <text x="286" y="400" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#40AAFF">#0080FF → #00C8FF</text>
+
+  <rect x="40"  y="416" width="124" height="26" rx="5" fill="#FFFFFF"/>
+  <rect x="171" y="416" width="124" height="26" rx="5" fill="#C8E8FF"/>
+  <text x="56"  y="434" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#001A44">闪电渐变起 / 止</text>
+  <text x="286" y="434" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#40AAFF">#FFFFFF → #40C8FF</text>
+
+  <rect x="40"  y="450" width="255" height="26" rx="5" fill="#40AAFF"/>
+  <text x="56"  y="468" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#001A44">文字 boxing fitness</text>
+  <text x="286" y="468" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#001A44">#40AAFF</text>
+
+  <!-- ══ COL 2: 减压模式 ══ -->
+  <rect x="320" y="96" width="255" height="36" rx="8" fill="#051428"/>
+  <text x="447" y="120" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="13" font-weight="700" fill="#88BBEE">减压模式  Stress Relief  冷静蓝</text>
+
+  <rect x="320" y="144" width="255" height="26" rx="5" fill="#040C1E"/>
+  <text x="336" y="162" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#AAAACC">深海背景</text>
+  <text x="566" y="162" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#88BBEE">#040C1E</text>
+
+  <rect x="320" y="178" width="124" height="26" rx="5" fill="#2266EE"/>
+  <rect x="451" y="178" width="124" height="26" rx="5" fill="#041880"/>
+  <text x="336" y="196" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">拳套主色渐变</text>
+  <text x="566" y="196" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#88BBEE">#2266EE → #041880</text>
+
+  <rect x="320" y="212" width="124" height="26" rx="5" fill="#4488FF"/>
+  <rect x="451" y="212" width="124" height="26" rx="5" fill="#1A55DD"/>
+  <text x="336" y="230" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">拳套高光</text>
+  <text x="566" y="230" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#88BBEE">#4488FF → #1A55DD</text>
+
+  <rect x="320" y="246" width="124" height="26" rx="5" fill="#0044AA"/>
+  <rect x="451" y="246" width="124" height="26" rx="5" fill="#0088DD"/>
+  <text x="336" y="264" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">压力指数条渐变</text>
+  <text x="566" y="264" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#88BBEE">#0044AA → #0088DD</text>
+
+  <rect x="320" y="280" width="255" height="26" rx="5" fill="#2266CC"/>
+  <text x="336" y="298" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">低频波形（宁静）</text>
+  <text x="566" y="298" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#88BBEE">#2266CC</text>
+
+  <rect x="320" y="314" width="255" height="26" rx="5" fill="#44AAFF"/>
+  <text x="336" y="332" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#001A44">IMU节点</text>
+  <text x="566" y="332" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#001A44">#44AAFF</text>
+
+  <rect x="320" y="348" width="255" height="26" rx="5" fill="#88BBEE"/>
+  <text x="336" y="366" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#001A44">标题文字</text>
+  <text x="566" y="366" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#001A44">#88BBEE</text>
+
+  <rect x="320" y="382" width="255" height="26" rx="5" fill="#3366AA"/>
+  <text x="336" y="400" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">副标题 · 提示文字</text>
+  <text x="566" y="400" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#AACCEE">#3366AA</text>
+
+  <rect x="320" y="416" width="255" height="26" rx="5" fill="#4488FF"/>
+  <text x="336" y="434" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">按钮主色</text>
+  <text x="566" y="434" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#AACCEE">#0033AA → #0066CC</text>
+
+  <!-- 心理说明 -->
+  <rect x="320" y="450" width="255" height="66" rx="8" fill="#060F22" stroke="#0A2244" stroke-width="0.8"/>
+  <text x="335" y="470" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" font-weight="600" fill="#4488BB">心理学依据</text>
+  <text x="335" y="486" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" fill="#2A4A77">· 蓝色激活副交感神经，降低皮质醇</text>
+  <text x="335" y="501" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" fill="#2A4A77">· 低频波形传递呼吸与平静节奏</text>
+  <text x="335" y="516" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" fill="#2A4A77">· 无失败机制降低戒备心理</text>
+
+  <!-- ══ COL 3: 燃脂模式 ══ -->
+  <rect x="600" y="96" width="260" height="36" rx="8" fill="#1A0500"/>
+  <text x="730" y="120" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="13" font-weight="700" fill="#FF8844">燃脂模式  Fat Burning  橙红活力</text>
+
+  <rect x="600" y="144" width="260" height="26" rx="5" fill="#120400"/>
+  <text x="616" y="162" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#AAAACC">深焦糖背景</text>
+  <text x="851" y="162" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FF8844">#120400</text>
+
+  <rect x="600" y="178" width="127" height="26" rx="5" fill="#FF6622"/>
+  <rect x="734" y="178" width="126" height="26" rx="5" fill="#AA2200"/>
+  <text x="616" y="196" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">拳套主色渐变</text>
+  <text x="851" y="196" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FF8844">#FF6622 → #AA2200</text>
+
+  <rect x="600" y="212" width="127" height="26" rx="5" fill="#FF8844"/>
+  <rect x="734" y="212" width="126" height="26" rx="5" fill="#EE4400"/>
+  <text x="616" y="230" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">拳套高光</text>
+  <text x="851" y="230" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FF8844">#FF8844 → #EE4400</text>
+
+  <rect x="600" y="246" width="85"  height="26" rx="5" fill="#CC2200"/>
+  <rect x="692" y="246" width="84"  height="26" rx="5" fill="#FF6600"/>
+  <rect x="783" y="246" width="77"  height="26" rx="5" fill="#FFAA00"/>
+  <text x="616" y="264" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">心率区间条</text>
+  <text x="851" y="264" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FF8844">#CC2200 → #FFAA00</text>
+
+  <rect x="600" y="280" width="127" height="26" rx="5" fill="#FF3300"/>
+  <rect x="734" y="280" width="126" height="26" rx="5" fill="#FFCC00"/>
+  <text x="616" y="298" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">高频ECG波形</text>
+  <text x="851" y="298" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FF8844">#FF3300 → #FFCC00</text>
+
+  <rect x="600" y="314" width="260" height="26" rx="5" fill="#FFDD00"/>
+  <text x="616" y="332" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#3A1800">IMU节点 · 传感器</text>
+  <text x="851" y="332" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#3A1800">#FFDD00</text>
+
+  <rect x="600" y="348" width="260" height="26" rx="5" fill="#FF8844"/>
+  <text x="616" y="366" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#1A0800">标题文字</text>
+  <text x="851" y="366" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#1A0800">#FF8844</text>
+
+  <rect x="600" y="382" width="127" height="26" rx="5" fill="#CC2200"/>
+  <rect x="734" y="382" width="126" height="26" rx="5" fill="#FF5500"/>
+  <text x="616" y="400" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFFFFF">按钮主色</text>
+  <text x="851" y="400" text-anchor="end" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FFAA66">#CC2200 → #FF5500</text>
+
+  <!-- 心理说明 -->
+  <rect x="600" y="416" width="260" height="100" rx="8" fill="#180600" stroke="#441800" stroke-width="0.8"/>
+  <text x="616" y="436" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" font-weight="600" fill="#FF6622">心理学依据</text>
+  <text x="616" y="452" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" fill="#662200">· 橙红激活交感神经，提升肾上腺素</text>
+  <text x="616" y="467" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" fill="#662200">· 高频波形制造紧迫感与冲刺动力</text>
+  <text x="616" y="482" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" fill="#662200">· 实时卡路里强化即时成就感</text>
+  <text x="616" y="497" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" fill="#662200">· EPOC数据延伸动力至训练后</text>
+  <text x="616" y="512" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="10" fill="#662200">· 倒计时制造冲刺窗口期</text>
+
+  <!-- ══ 底部：输出规格 ══ -->
+  <line x1="40" y1="536" x2="860" y2="536" stroke="#1A1A28" stroke-width="1"/>
+  <text x="450" y="558" text-anchor="middle"
+        font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+        font-size="14" font-weight="600" fill="#AAAACC">输出规格 Output Specifications</text>
+
+  <!-- 规格表 -->
+  <rect x="40" y="570" width="820" height="26" rx="5" fill="#0A0A18"/>
+  <text x="56"  y="588" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#6666AA">用途</text>
+  <text x="240" y="588" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#6666AA">平台</text>
+  <text x="420" y="588" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#6666AA">尺寸 (px)</text>
+  <text x="590" y="588" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#6666AA">圆角</text>
+  <text x="720" y="588" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" font-weight="600" fill="#6666AA">源文件</text>
+
+  <text x="56"  y="614" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#888899">App Store 主图标</text>
+  <text x="240" y="614" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#888899">iOS</text>
+  <text x="420" y="614" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#4488FF">1024 × 1024</text>
+  <text x="590" y="614" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#888899">系统自动裁切</text>
+  <text x="720" y="614" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#40AAFF">01_BoxingFitness_Icon_1024.svg</text>
+
+  <text x="56"  y="634" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#888899">减压模式 UI 界面</text>
+  <text x="240" y="634" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#888899">iPhone (390×844)</text>
+  <text x="420" y="634" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#4488FF">390 × 844</text>
+  <text x="590" y="634" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#888899">—</text>
+  <text x="720" y="634" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#88BBEE">02_BoxingFitness_StressRelief_UI.svg</text>
+
+  <text x="56"  y="654" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#888899">燃脂模式 UI 界面</text>
+  <text x="240" y="654" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#888899">iPhone (390×844)</text>
+  <text x="420" y="654" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#4488FF">390 × 844</text>
+  <text x="590" y="654" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#888899">—</text>
+  <text x="720" y="654" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#FF8844">03_BoxingFitness_FatBurning_UI.svg</text>
+
+  <text x="56"  y="674" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#888899">设计规范文档</text>
+  <text x="240" y="674" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#888899">全平台</text>
+  <text x="420" y="674" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#4488FF">900 × 680</text>
+  <text x="590" y="674" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#888899">—</text>
+  <text x="720" y="674" font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif" font-size="11" fill="#AAAACC">04_BoxingFitness_DesignSpec.svg</text>
+
+</svg>

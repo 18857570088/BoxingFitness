@@ -1,0 +1,46 @@
+# Build outputs
+build/
+.gradle/
+.kotlin/
+out/
+dist/
+*.apk
+*.aab
+*.ap_
+
+# IDE and local machine files
+.idea/
+*.iml
+local.properties
+.DS_Store
+Thumbs.db
+
+# Python caches and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Node and frontend caches
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Secrets and signing files
+.env
+*.env
+*.keystore
+*.jks
+*.pem
+*.p12
+*.key
+
+# Generated or temporary local artifacts
+20260516/
+boxingfitness-deploy/apk/
+*.log
+*.tmp

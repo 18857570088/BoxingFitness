@@ -1,0 +1,53 @@
+BoxingFitness APP User Agreement
+Version: V1.4
+Effective Date: 2026-05-16
+
+# 1. Overview
+This Agreement governs your use of the BoxingFitness APP and related services provided by Shaoxing Weimai Technology Co., Ltd. By downloading, installing, logging in to, or using the APP, you agree to this Agreement.
+
+# 2. Services
+BoxingFitness currently provides:
+- Bluetooth scanning, paired left/right smart boxing glove connection, connection status, and battery display;
+- sensitivity settings, device control when training starts or ends, and Bluetooth hit-event recognition;
+- Color Graffiti, Emotion Champ, Free Boxing, Rapid Fat Burn, Fat Burn Challenge, and Fat Burn Coach training modules;
+- workout records, workout results, leaderboards, profile, language settings, and data sync services.
+
+# 3. Use Conditions
+- The current APP can be used directly after installation and no longer performs serial-number or activation-code verification.
+- Training features that require smart gloves should first connect the left and right gloves with the same device number in Settings.
+- You should make sure your environment is safe, your physical condition is suitable for exercise, and your training intensity is reasonable.
+
+# 4. Training Data and Leaderboard Rules
+- Punch count, left/right hits, training duration, calories, fat burn, stage results, and plan results may be used for workout reports, workout results, profile statistics, and rankings.
+- Leaderboards may display daily best punches, cumulative punches, cumulative training duration, cumulative calories, cumulative fat burn, and tier.
+- Calories and fat burn are estimates for workout feedback only and do not constitute medical, nutrition, rehabilitation, competition-certification, or weight-loss promises.
+
+# 5. User Conduct
+You must not forge training data, manipulate rankings, impersonate another account, interfere with Bluetooth device communication, reverse engineer the APP, disrupt service stability, or otherwise harm users, devices, servers, or the operator.
+
+# 6. Bluetooth Device Use
+- The APP connects smart boxing gloves through Bluetooth and counts punches based on hit events returned by the devices.
+- When training starts, ends, or countdown reaches zero, the APP may send gyroscope, sensitivity, and other control commands to the devices.
+- Connection issues caused by battery level, distance, obstruction, system Bluetooth state, environmental interference, or hardware failure may affect training experience.
+
+# 7. Intellectual Property
+The APP software code, UI design, training logic, leaderboard rules, text, graphics, and related content are owned by Shaoxing Weimai Technology Co., Ltd. or related rights holders. You may not copy, adapt, distribute, or use them commercially without permission.
+
+# 8. Changes, Suspension, and Termination
+We may change, suspend, or terminate part of the services for maintenance, upgrades, fixes, server adjustments, product strategy, or legal compliance, while reasonably protecting existing user data and rights.
+
+# 9. Disclaimer
+BoxingFitness is intended for boxing training, emotional relief, and fat-burn workout feedback. It does not replace advice from doctors, coaches, or professional organizations. You should train according to your physical condition and assume risks caused by improper exercise.
+
+# 10. Privacy
+We process personal information in accordance with the BoxingFitness APP Privacy Policy.
+
+# 11. Updates
+We may update this Agreement as product features and laws change. Continued use of the APP means acceptance of the updated Agreement.
+
+# 12. Governing Law
+This Agreement is governed by the laws of the People's Republic of China.
+
+# 13. Contact
+- Operator: Shaoxing Weimai Technology Co., Ltd.
+- Please refer to the in-app About Us or developer information page for current contact information.

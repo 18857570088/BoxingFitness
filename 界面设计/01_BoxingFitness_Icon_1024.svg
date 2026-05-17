@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024"
+     xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Boxing Fitness — App Icon Deep Blue Edition</title>
+  <desc>主图标 深蓝极简版 1024×1024px。深空蓝背景，带IMU芯片和压力传感器点阵的蓝色拳套，三轴运动轨迹，闪电中心，ECG心率波形，boxing fitness文字。</desc>
+
+  <defs>
+    <!-- 背景 -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#050C1A"/>
+      <stop offset="55%"  stop-color="#0A1A38"/>
+      <stop offset="100%" stop-color="#060E22"/>
+    </linearGradient>
+    <!-- 拳套主体 深蓝 -->
+    <linearGradient id="glove_L" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#1A6AFF"/>
+      <stop offset="55%"  stop-color="#0840C0"/>
+      <stop offset="100%" stop-color="#041880"/>
+    </linearGradient>
+    <linearGradient id="glove_R" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#1A6AFF"/>
+      <stop offset="55%"  stop-color="#0840C0"/>
+      <stop offset="100%" stop-color="#041880"/>
+    </linearGradient>
+    <!-- 拳套高光 -->
+    <linearGradient id="glove_hi" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#60AAFF"/>
+      <stop offset="100%" stop-color="#1868D8"/>
+    </linearGradient>
+    <!-- 护腕 -->
+    <linearGradient id="cuff" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#021060"/>
+      <stop offset="100%" stop-color="#010830"/>
+    </linearGradient>
+    <!-- 护腕LED -->
+    <linearGradient id="led" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#0060FF"/>
+      <stop offset="50%"  stop-color="#00CCFF"/>
+      <stop offset="100%" stop-color="#0060FF"/>
+    </linearGradient>
+    <!-- 闪电 白→冰蓝→青 -->
+    <linearGradient id="bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"   stop-color="#FFFFFF"/>
+      <stop offset="40%"  stop-color="#C8E8FF"/>
+      <stop offset="100%" stop-color="#40C8FF"/>
+    </linearGradient>
+    <!-- ECG波形 -->
+    <linearGradient id="ecg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#0080FF"/>
+      <stop offset="50%"  stop-color="#00C8FF"/>
+      <stop offset="100%" stop-color="#0060E0"/>
+    </linearGradient>
+    <!-- 闪电外发光 -->
+    <radialGradient id="bolt_glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#0080FF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0080FF" stop-opacity="0"/>
+    </radialGradient>
+    <!-- 压力传感器热力 -->
+    <radialGradient id="press_heat" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#00AAFF" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#0044CC" stop-opacity="0"/>
+    </radialGradient>
+    <!-- 环境光晕 -->
+    <radialGradient id="amb" cx="50%" cy="44%" r="55%">
+      <stop offset="0%"   stop-color="#0050CC" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0050CC" stop-opacity="0"/>
+    </radialGradient>
+    <!-- 雷达环渐变 -->
+    <linearGradient id="radar_ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#1A6AFF" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#1A6AFF" stop-opacity="0.03"/>
+    </linearGradient>
+    <!-- 圆角裁切 -->
+    <clipPath id="icon_clip">
+      <rect width="1024" height="1024" rx="221"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#icon_clip)">
+
+    <!-- ── 背景 ── -->
+    <rect width="1024" height="1024" fill="url(#bg)"/>
+    <!-- 环境光晕 -->
+    <ellipse cx="512" cy="427" rx="462" ry="410" fill="url(#amb)"/>
+    <!-- 雷达同心圆 -->
+    <circle cx="512" cy="444" r="393" fill="none" stroke="url(#radar_ring)" stroke-width="6.8"/>
+    <circle cx="512" cy="444" r="256" fill="none" stroke="#1A6AFF" stroke-width="3.0" opacity="0.12"/>
+
+    <!-- ── IMU 三轴运动轨迹 ── -->
+    <!-- X轴 青绿 高频 -->
+    <path d="M103,290 Q188,222 273,290 Q358,358 443,290 Q528,222 613,290 Q698,358 783,290 Q868,222 921,290"
+          fill="none" stroke="#00CCFF" stroke-width="6.4"
+          stroke-linecap="round" opacity="0.58"/>
+    <!-- Y轴 蓝紫 中频 -->
+    <path d="M103,410 Q239,342 375,410 Q512,478 649,410 Q786,342 921,410"
+          fill="none" stroke="#4488FF" stroke-width="5.6"
+          stroke-linecap="round" opacity="0.42"/>
+    <!-- Z轴 深蓝 低频 -->
+    <path d="M103,530 Q188,581 273,530 Q358,479 443,530 Q528,581 613,530 Q698,479 783,530 Q868,581 921,530"
+          fill="none" stroke="#2244CC" stroke-width="4.7"
+          stroke-linecap="round" opacity="0.30"/>
+    <!-- X轴端节点 -->
+    <circle cx="103" cy="290" r="12" fill="#00CCFF" opacity="0.78"/>
+    <circle cx="921" cy="290" r="12" fill="#00CCFF" opacity="0.78"/>
+    <!-- Y轴端节点 -->
+    <circle cx="103" cy="410" r="9.4" fill="#4488FF" opacity="0.60"/>
+    <circle cx="921" cy="410" r="9.4" fill="#4488FF" opacity="0.60"/>
+    <!-- Z轴端节点 -->
+    <circle cx="103" cy="530" r="7.7" fill="#2244CC" opacity="0.45"/>
+    <circle cx="921" cy="530" r="7.7" fill="#2244CC" opacity="0.45"/>
+    <!-- 轴标签 -->
+    <text x="68"  y="278" text-anchor="middle" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif"
+          font-size="34" font-weight="700" fill="#00CCFF" opacity="0.70">X</text>
+    <text x="68"  y="396" text-anchor="middle" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif"
+          font-size="34" font-weight="700" fill="#4488FF" opacity="0.55">Y</text>
+    <text x="68"  y="516" text-anchor="middle" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif"
+          font-size="34" font-weight="700" fill="#2244CC" opacity="0.42">Z</text>
+
+    <!-- ══════════════════════════════════════
+         LEFT GLOVE   rotate -26°
+    ══════════════════════════════════════ -->
+    <g transform="translate(512,427) rotate(-26) translate(-179,-197)">
+      <!-- 拳套主体 -->
+      <rect x="0"    y="94"  width="179" height="248" rx="51" fill="url(#glove_L)"/>
+      <!-- 拳头高光顶 -->
+      <rect x="12.8" y="8.5" width="153" height="111" rx="47" fill="url(#glove_hi)"/>
+      <!-- 护腕 -->
+      <rect x="0"    y="273" width="179" height="68"  rx="26" fill="url(#cuff)"/>
+      <!-- 表面高光条 -->
+      <rect x="25.6" y="25.6" width="76.7" height="18.8" rx="9.4" fill="white" opacity="0.32"/>
+      <!-- 车缝线 -->
+      <rect x="25.6" y="119" width="128"  height="7.7" rx="3.4" fill="white" opacity="0.16"/>
+      <rect x="25.6" y="149" width="128"  height="7.7" rx="3.4" fill="white" opacity="0.16"/>
+      <rect x="25.6" y="179" width="94"   height="7.7" rx="3.4" fill="white" opacity="0.10"/>
+
+      <!-- ── IMU 芯片封装（拳套顶右角）── -->
+      <rect x="111"  y="18.8" width="51.2" height="51.2" rx="11.1"
+            fill="#010820" stroke="#00CCFF" stroke-width="5.5" opacity="0.95"/>
+      <!-- 芯片内核底纹 -->
+      <rect x="122.6" y="30.7" width="27.3" height="27.3" rx="4.3"
+            fill="#00CCFF" opacity="0.22"/>
+      <!-- 芯片中心节点 -->
+      <circle cx="136.5" cy="44.3" r="9.4" fill="#00CCFF" opacity="0.95"/>
+      <!-- 四引脚 -->
+      <line x1="119.5" y1="44.3" x2="111"   y2="44.3" stroke="#00CCFF" stroke-width="3.8" opacity="0.70"/>
+      <line x1="153.5" y1="44.3" x2="162"   y2="44.3" stroke="#00CCFF" stroke-width="3.8" opacity="0.70"/>
+      <line x1="136.5" y1="27.3" x2="136.5" y2="18.8" stroke="#00CCFF" stroke-width="3.8" opacity="0.70"/>
+      <line x1="136.5" y1="61.4" x2="136.5" y2="69.9" stroke="#00CCFF" stroke-width="3.8" opacity="0.70"/>
+      <!-- 引脚焊盘 -->
+      <rect x="105.1" y="40.9" width="5.9" height="6.8" rx="1.7" fill="#00CCFF" opacity="0.60"/>
+      <rect x="157.9" y="40.9" width="5.9" height="6.8" rx="1.7" fill="#00CCFF" opacity="0.60"/>
+      <rect x="133.1" y="12.8" width="6.8"  height="5.9" rx="1.7" fill="#00CCFF" opacity="0.60"/>
+      <rect x="133.1" y="66.5" width="6.8"  height="5.9" rx="1.7" fill="#00CCFF" opacity="0.60"/>
+
+      <!-- ── 压力传感器点阵 3×3（拳头中心）── -->
+      <ellipse cx="89.5" cy="166" rx="47" ry="38" fill="url(#press_heat)" opacity="0.40"/>
+      <!-- 行1 -->
+      <circle cx="64"   cy="144" r="6.4" fill="#44AAFF" opacity="0.68"/>
+      <circle cx="89.5" cy="144" r="6.4" fill="#44AAFF" opacity="0.68"/>
+      <circle cx="115"  cy="144" r="6.4" fill="#44AAFF" opacity="0.68"/>
+      <!-- 行2 中心最亮 -->
+      <circle cx="64"   cy="166" r="6.4" fill="#66CCFF" opacity="0.78"/>
+      <circle cx="89.5" cy="166" r="8.9"  fill="#FFFFFF"  opacity="0.90"/>
+      <circle cx="115"  cy="166" r="6.4" fill="#66CCFF" opacity="0.78"/>
+      <!-- 行3 -->
+      <circle cx="64"   cy="188" r="6.4" fill="#44AAFF" opacity="0.68"/>
+      <circle cx="89.5" cy="188" r="6.4" fill="#44AAFF" opacity="0.68"/>
+      <circle cx="115"  cy="188" r="6.4" fill="#44AAFF" opacity="0.68"/>
+
+      <!-- 护腕 LED 数据条 -->
+      <rect x="21.3" y="286" width="136.5" height="18.8" rx="9.4"
+            fill="url(#led)" opacity="0.72"/>
+      <line x1="25.6" y1="315" x2="153.4" y2="315"
+            stroke="#0060FF" stroke-width="4.7" stroke-linecap="round" opacity="0.40"/>
+      <!-- 护腕状态指示灯 -->
+      <circle cx="34"   cy="337" r="5.9" fill="#00CCFF" opacity="0.70"/>
+      <circle cx="59.6" cy="337" r="5.9" fill="#4488FF" opacity="0.60"/>
+      <circle cx="85.1" cy="337" r="5.9" fill="#0080FF" opacity="0.60"/>
+    </g>
+
+    <!-- ══════════════════════════════════════
+         RIGHT GLOVE   rotate +26°
+    ══════════════════════════════════════ -->
+    <g transform="translate(512,427) rotate(26) translate(0,-197)">
+      <rect x="0"    y="94"  width="179" height="248" rx="51" fill="url(#glove_R)"/>
+      <rect x="12.8" y="8.5" width="153" height="111" rx="47" fill="url(#glove_hi)"/>
+      <rect x="0"    y="273" width="179" height="68"  rx="26" fill="url(#cuff)"/>
+      <rect x="25.6" y="25.6" width="76.7" height="18.8" rx="9.4" fill="white" opacity="0.32"/>
+      <rect x="25.6" y="119" width="128"  height="7.7" rx="3.4" fill="white" opacity="0.16"/>
+      <rect x="25.6" y="149" width="128"  height="7.7" rx="3.4" fill="white" opacity="0.16"/>
+      <rect x="25.6" y="179" width="94"   height="7.7" rx="3.4" fill="white" opacity="0.10"/>
+      <!-- IMU芯片（左角） -->
+      <rect x="17"   y="18.8" width="51.2" height="51.2" rx="11.1"
+            fill="#010820" stroke="#00CCFF" stroke-width="5.5" opacity="0.95"/>
+      <rect x="28.6" y="30.7" width="27.3" height="27.3" rx="4.3" fill="#00CCFF" opacity="0.22"/>
+      <circle cx="42.5" cy="44.3" r="9.4" fill="#00CCFF" opacity="0.95"/>
+      <line x1="26.4" y1="44.3" x2="17"   y2="44.3" stroke="#00CCFF" stroke-width="3.8" opacity="0.70"/>
+      <line x1="58.7" y1="44.3" x2="68"   y2="44.3" stroke="#00CCFF" stroke-width="3.8" opacity="0.70"/>
+      <line x1="42.5" y1="27.3" x2="42.5" y2="18.8" stroke="#00CCFF" stroke-width="3.8" opacity="0.70"/>
+      <line x1="42.5" y1="61.4" x2="42.5" y2="69.9" stroke="#00CCFF" stroke-width="3.8" opacity="0.70"/>
+      <rect x="6.8"  y="40.9" width="5.9" height="6.8" rx="1.7" fill="#00CCFF" opacity="0.60"/>
+      <rect x="67.2" y="40.9" width="5.9" height="6.8" rx="1.7" fill="#00CCFF" opacity="0.60"/>
+      <rect x="39.1" y="12.8" width="6.8"  height="5.9" rx="1.7" fill="#00CCFF" opacity="0.60"/>
+      <rect x="39.1" y="66.5" width="6.8"  height="5.9" rx="1.7" fill="#00CCFF" opacity="0.60"/>
+      <!-- 压力传感器 -->
+      <ellipse cx="89.5" cy="166" rx="47" ry="38" fill="url(#press_heat)" opacity="0.40"/>
+      <circle cx="64"   cy="144" r="6.4" fill="#44AAFF" opacity="0.68"/>
+      <circle cx="89.5" cy="144" r="6.4" fill="#44AAFF" opacity="0.68"/>
+      <circle cx="115"  cy="144" r="6.4" fill="#44AAFF" opacity="0.68"/>
+      <circle cx="64"   cy="166" r="6.4" fill="#66CCFF" opacity="0.78"/>
+      <circle cx="89.5" cy="166" r="8.9"  fill="#FFFFFF"  opacity="0.90"/>
+      <circle cx="115"  cy="166" r="6.4" fill="#66CCFF" opacity="0.78"/>
+      <circle cx="64"   cy="188" r="6.4" fill="#44AAFF" opacity="0.68"/>
+      <circle cx="89.5" cy="188" r="6.4" fill="#44AAFF" opacity="0.68"/>
+      <circle cx="115"  cy="188" r="6.4" fill="#44AAFF" opacity="0.68"/>
+      <!-- 护腕LED -->
+      <rect x="21.3" y="286" width="136.5" height="18.8" rx="9.4" fill="url(#led)" opacity="0.72"/>
+      <line x1="25.6" y1="315" x2="153.4" y2="315" stroke="#0060FF" stroke-width="4.7" stroke-linecap="round" opacity="0.40"/>
+      <circle cx="34"   cy="337" r="5.9" fill="#00CCFF" opacity="0.70"/>
+      <circle cx="59.6" cy="337" r="5.9" fill="#4488FF" opacity="0.60"/>
+      <circle cx="85.1" cy="337" r="5.9" fill="#0080FF" opacity="0.60"/>
+    </g>
+
+    <!-- ── 闪电中心图标 ── -->
+    <!-- 外发光晕 -->
+    <ellipse cx="512" cy="427" rx="94" ry="111" fill="url(#bolt_glow)"/>
+    <!-- 闪电主体多边形 -->
+    <polygon
+      points="546,333  486,435  529,435  477,538  554,418  511,418"
+      fill="url(#bolt)" opacity="0.96"/>
+    <!-- 闪电内芯高光 -->
+    <polygon
+      points="537,350  497,431  529,431  481,524  541,426  511,426"
+      fill="white" opacity="0.26"/>
+    <!-- 底部反光 -->
+    <ellipse cx="516" cy="541" rx="29.8" ry="8.5" fill="#40C8FF" opacity="0.32"/>
+
+    <!-- 传感器连线（IMU → 中心） -->
+    <line x1="341" y1="384" x2="444" y2="418"
+          stroke="#00CCFF" stroke-width="3.4" stroke-dasharray="12.8,17.1" opacity="0.32"/>
+    <line x1="683" y1="384" x2="580" y2="418"
+          stroke="#00CCFF" stroke-width="3.4" stroke-dasharray="12.8,17.1" opacity="0.32"/>
+    <circle cx="341" cy="384" r="12.8" fill="#00CCFF" opacity="0.50"/>
+    <circle cx="683" cy="384" r="12.8" fill="#00CCFF" opacity="0.50"/>
+
+    <!-- ── ECG 心率波形 ── -->
+    <polyline
+      points="137,700 179,700 205,632 231,776 257,606 283,700 324,700 358,700 384,666 409,700 444,700 478,700 512,649 546,700 580,700 614,700 640,666 666,700 708,700 734,632 760,776 786,606 812,700 853,700 887,700"
+      fill="none" stroke="url(#ecg)"
+      stroke-width="11.9" stroke-linecap="round" stroke-linejoin="round" opacity="0.90"/>
+    <!-- 心跳峰值节点 -->
+    <circle cx="257" cy="606" r="17.1" fill="#0080FF" opacity="0.88"/>
+    <circle cx="786" cy="606" r="17.1" fill="#00C8FF" opacity="0.88"/>
+    <circle cx="512" cy="649" r="11.9" fill="#0060E0" opacity="0.72"/>
+
+    <!-- ── 文字 boxing fitness ── -->
+    <rect x="68.3" y="819" width="887.4" height="153.6" rx="42.7"
+          fill="#020810" opacity="0.68"/>
+    <text x="512" y="918"
+          text-anchor="middle"
+          font-family="'SF Pro Display','Helvetica Neue',Helvetica,Arial,sans-serif"
+          font-size="102" font-weight="700" fill="#40AAFF"
+          letter-spacing="15.4">boxing fitness</text>
+
+  </g>
+</svg>

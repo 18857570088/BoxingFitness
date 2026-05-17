@@ -1,0 +1,61 @@
+Politique de confidentialite de l'application BoxingFitness
+Version : V1.4
+Date d'entree en vigueur : 2026-05-16
+
+# 1. Champ d'application
+Cette politique s'applique a l'application BoxingFitness et aux services associes fournis par Shaoxing Weimai Technology Co., Ltd., notamment la connexion Bluetooth des gants de boxe intelligents, les modules d'entrainement, les historiques, les resultats, les classements, le profil, les reglages de langue, les reglages de sensibilite et la synchronisation des donnees.
+
+# 2. Informations que nous traitons
+## 1. Informations utilisateur et compte
+- Pour prendre en charge le profil, les historiques d'entrainement, les classements, la synchronisation cloud et l'authentification de base, nous pouvons traiter des identifiants utilisateur, l'etat de connexion ou d'authentification, le pseudonyme, l'avatar, la langue, la region, le niveau, les succes et les donnees de profil affichees.
+- L'application actuelle peut etre utilisee directement apres installation et n'effectue plus de verification par numero de serie ou code d'activation. Nous ne vous demandons pas de fournir un numero de serie ou un code d'activation pour commencer a utiliser l'application.
+
+## 2. Informations des appareils Bluetooth
+- L'application utilise le Bluetooth pour rechercher et connecter des gants de boxe intelligents dont le nom suit la regle BOXING#L/R plus un numero d'appareil a six caracteres.
+- Pour connecter les gants gauche et droit, reconnaitre les coups et controler l'entrainement, nous pouvons traiter le nom de l'appareil, l'identifiant main gauche/droite, le numero d'appareil, l'adresse Bluetooth, l'etat de connexion, le niveau de batterie, la puissance du signal, le reglage de sensibilite, les evenements de coup, l'etat de communication et les journaux de diagnostic necessaires.
+- L'application peut envoyer aux gants des commandes de debut/fin d'entrainement, d'activation/desactivation du gyroscope, de sensibilite et d'autres commandes de controle.
+
+## 3. Donnees d'entrainement
+- L'application comprend les modules Color Graffiti, Emotion Champ, Free Boxing, Rapid Fat Burn, Fat Burn Challenge et Fat Burn Coach.
+- Nous pouvons traiter le nombre de coups, les coups gauche/droite, la duree d'entrainement, le compte a rebours, l'intensite, les calories, la graisse brulee, les resultats d'etape, les resultats de plan, l'historique et les statistiques par jour, semaine, mois, annee et total.
+- Les calories, la graisse brulee et l'intensite sont des estimations ou des resultats d'affichage bases sur l'activite d'entrainement. Ils servent uniquement au retour d'experience sportif et ne constituent pas une promesse medicale, nutritionnelle, de rehabilitation, de perte de poids ou de certification sportive.
+
+## 4. Classements et affichage public
+- Les classements peuvent afficher le pseudonyme, l'avatar ou l'avatar par defaut, le niveau, le rang, le meilleur nombre de coups du jour, les coups cumules, la duree cumulee, les calories cumulees et la graisse brulee cumulee.
+- Sauf affichage necessaire au classement, contenu partage volontairement par vous ou exigence legale, nous ne divulguons pas publiquement vos informations personnelles.
+
+## 5. Journaux techniques
+- Pour assurer la stabilite de l'application et diagnostiquer les problemes de connexion Bluetooth et de synchronisation, nous pouvons traiter le modele de l'appareil, la version du systeme, la version de l'application, l'etat du reseau, l'etat des requetes, les journaux d'erreur, les journaux de connexion Bluetooth et l'etat de synchronisation.
+- Les journaux techniques sont utilises uniquement pour le diagnostic, la maintenance du service, l'audit de securite et l'amelioration de l'experience.
+
+# 3. Autorisations
+- Bluetooth : rechercher et connecter les gants de boxe intelligents, lire la batterie, les evenements de coup et l'etat de l'appareil, et envoyer des commandes d'entrainement, de gyroscope et de sensibilite.
+- Reseau : services de compte ou d'identifiant utilisateur, synchronisation des entrainements, consultation des classements, mise a jour du profil et requetes necessaires.
+- Photos ou stockage : choix d'avatar, cache d'images, generation ou partage des resultats d'entrainement.
+- L'application actuelle reconnait les coups au moyen des capteurs des gants intelligents et des evenements Bluetooth. Elle ne repose pas sur l'enregistrement microphone ni sur la reconnaissance sonore, et nous ne collectons pas d'echantillons audio pour compter les coups.
+
+# 4. Stockage local et cloud
+- Le stockage local peut inclure la langue, les informations Bluetooth, les derniers appareils connectes, les reglages de sensibilite, l'URI de l'avatar, le cache d'entrainement, les donnees en attente de synchronisation et la configuration necessaire.
+- Le stockage cloud peut inclure le profil, les historiques, les resultats, les indicateurs de classement, l'etat de synchronisation et les journaux de service necessaires.
+- Si le reseau ou le cloud est temporairement indisponible, l'application peut continuer a enregistrer une partie des donnees localement et tenter de les synchroniser apres retablissement.
+
+# 5. Partage, transfert et divulgation publique
+- Nous ne vendons pas vos informations personnelles a des tiers non lies.
+- Pour fournir les services essentiels, les donnees necessaires peuvent circuler entre notre service de compte, notre service d'historique d'entrainement, notre service de classement et nos bases de donnees.
+- En cas de fusion, division ou transfert d'actifs, nous demanderons au nouveau detenteur de continuer a respecter cette politique.
+
+# 6. Securite
+Nous appliquons des mesures raisonnables, notamment le controle d'acces, l'isolation des services, la gestion des droits de base de donnees, les journaux d'audit et le principe du moindre privilege. Aucun environnement Internet n'est totalement sur. Veuillez proteger vos informations de compte et eviter d'utiliser l'application sur des appareils ou reseaux non fiables.
+
+# 7. Vos droits
+Vous pouvez consulter et modifier votre profil, la langue, l'avatar et certaines preferences dans l'application. Lorsque la loi l'exige, vous pouvez nous contacter pour demander la correction, la suppression ou la limitation de certains traitements de donnees personnelles.
+
+# 8. Mineurs
+Si vous etes mineur, veuillez utiliser l'application sous la supervision d'un responsable legal et vous entrainer selon votre condition physique.
+
+# 9. Mises a jour
+Nous pouvons mettre a jour cette politique lorsque les fonctions, les methodes de traitement des donnees ou les lois changent. Si une mise a jour affecte sensiblement vos droits, nous vous en informerons dans l'application ou par un autre moyen raisonnable.
+
+# 10. Contact
+- Exploitant : Shaoxing Weimai Technology Co., Ltd.
+- Veuillez consulter la page A propos ou les informations developpeur dans l'application pour les coordonnees actuelles.
