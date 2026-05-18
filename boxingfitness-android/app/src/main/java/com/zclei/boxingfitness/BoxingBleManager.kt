@@ -119,8 +119,8 @@ class BoxingBleManager(
             { it.pairId?.toLongOrNull(radix = 36) ?: Long.MAX_VALUE },
             {
                 when (it.hand) {
-                    BoxingHand.Left -> 0
-                    BoxingHand.Right -> 1
+                    BoxingHand.Right -> 0
+                    BoxingHand.Left -> 1
                     null -> 2
                 }
             },

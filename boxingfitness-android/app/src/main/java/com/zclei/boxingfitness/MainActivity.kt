@@ -1685,6 +1685,10 @@ class MainActivity : AppCompatActivity() {
                 override fun onStateChanged(state: BoxingBleManager.State) {
                     updateBoxingBleStatus(state.message)
                     updateHeaderBleState(state)
+                    renderBoxingBleDeviceSelection(
+                        devices = boxingBleManager?.devices.orEmpty(),
+                        connectedDevices = state.connectedDevices,
+                    )
                     if (hasDualBoxingBleConnection(state)) {
                         saveLastBoxingBlePair(state.readyDevices)
                         cancelBoxingBleAutoConnectTimeout()
@@ -1695,12 +1699,14 @@ class MainActivity : AppCompatActivity() {
                 }
 
                 override fun onDeviceListChanged(devices: List<BoxingBleManager.DeviceCandidate>) {
-                    val first = devices.firstOrNull()
-                    if (selectedBleDevice == null || devices.none { it.address == selectedBleDevice?.address }) {
+                    val state = boxingBleManager?.currentState ?: BoxingBleManager.State()
+                    val visibleDevices = mergeBoxingBleDevices(devices, state.connectedDevices)
+                    val first = state.connectedDevice ?: visibleDevices.firstOrNull()
+                    if (selectedBleDevice == null || visibleDevices.none { it.address == selectedBleDevice?.address }) {
                         selectedBleDevice = first
                     }
-                    renderBoxingBleDeviceSelection(devices)
-                    updateBoxingBleButtons(connected = false)
+                    renderBoxingBleDeviceSelection(visibleDevices, state.connectedDevices)
+                    updateBoxingBleButtons(connected = state.connectedDevices.isNotEmpty())
                 }
 
                 override fun onPacket(packet: BoxingBleManager.BoxingPacket) {
@@ -1750,21 +1756,28 @@ class MainActivity : AppCompatActivity() {
         connectedDevices: List<BoxingBleManager.DeviceCandidate> = emptyList(),
     ) {
         if (!::boxingBleDeviceView.isInitialized) return
+        val visibleDevices = mergeBoxingBleDevices(devices, connectedDevices)
         val selected = selectedBleDevice
         val connectedAddresses = connectedDevices.map { it.address }.toSet()
+        if (selectedBleDevice == null && visibleDevices.isNotEmpty()) {
+            selectedBleDevice = connectedDevices.firstOrNull() ?: visibleDevices.first()
+        } else if (selectedBleDevice != null && visibleDevices.none { it.address == selectedBleDevice?.address }) {
+            selectedBleDevice = connectedDevices.firstOrNull() ?: visibleDevices.firstOrNull()
+        }
+        val effectiveSelected = selectedBleDevice
         boxingBleDeviceView.text =
             when {
                 connectedDevices.isNotEmpty() ->
                     bleConnectedDevicesText(connectedDevices.size) + "\n" +
                         connectedDevices.joinToString("\n") { formatBoxingBleDevice(it, showAddress = false) }
-                selected != null ->
-                    "${bleSelectedDevicePrefix()}${formatBoxingBleDevice(selected, showAddress = false)}"
+                effectiveSelected != null ->
+                    "${bleSelectedDevicePrefix()}${formatBoxingBleDevice(effectiveSelected, showAddress = false)}"
                 else -> bleNoDeviceSelectedLabel()
             }
         if (!::boxingBleDeviceListView.isInitialized) return
         boxingBleDeviceListView.removeAllViews()
-        devices.forEach { device ->
-            val checked = selected?.address == device.address || connectedAddresses.contains(device.address)
+        visibleDevices.forEach { device ->
+            val checked = effectiveSelected?.address == device.address || connectedAddresses.contains(device.address)
             val row =
                 RadioButton(this).apply {
                     text = formatBoxingBleDevice(device, showAddress = true)
@@ -1775,13 +1788,34 @@ class MainActivity : AppCompatActivity() {
                     setPadding(0, dp(4), 0, dp(4))
                     setOnClickListener {
                         selectedBleDevice = device
-                        renderBoxingBleDeviceSelection(devices, connectedDevices)
+                        renderBoxingBleDeviceSelection(visibleDevices, connectedDevices)
                         updateBoxingBleButtons(connected = connectedDevices.isNotEmpty())
                     }
                 }
             boxingBleDeviceListView.addView(row)
         }
     }
+
+    private fun mergeBoxingBleDevices(
+        devices: List<BoxingBleManager.DeviceCandidate>,
+        connectedDevices: List<BoxingBleManager.DeviceCandidate>,
+    ): List<BoxingBleManager.DeviceCandidate> =
+        (connectedDevices + devices)
+            .distinctBy { it.address }
+            .sortedWith(
+                compareBy<BoxingBleManager.DeviceCandidate>(
+                    { it.pairId?.toLongOrNull(radix = 36) ?: Long.MAX_VALUE },
+                    {
+                        when (it.hand) {
+                            BoxingBleManager.BoxingHand.Right -> 0
+                            BoxingBleManager.BoxingHand.Left -> 1
+                            null -> 2
+                        }
+                    },
+                    { it.name },
+                    { it.address },
+                ),
+            )
 
     private fun formatBoxingBleDevice(
         device: BoxingBleManager.DeviceCandidate,

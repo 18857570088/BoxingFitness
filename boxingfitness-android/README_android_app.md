@@ -1,36 +1,27 @@
 # BoxingFitness Android
 
-This folder contains a native Android app project for the boxing reflex-ball trainer.
+This folder contains the native Android app project for BoxingFitness.
 
-Current short-term recognition scope:
+Current recognition method:
 
-- single punch
-- slower double punch
-- medium-speed triple punch (up to about 3 punches per second)
+- Smart boxing gloves connect through Bluetooth Low Energy.
+- Punches are detected from glove sensor packets.
+- The app does not use microphone-based punch recognition and does not collect audio samples.
 
-Not a short-term acceptance target:
+Main features:
 
-- 4-hit chains
-- high-speed bursts above 3 punches per second
-
-Implemented features:
-
-- 3, 2, 1 countdown before training starts
-- 30-second and 60-second training modes
-- Live large-number hit counter
-- Automatic post-session report:
-  - total hit count
-  - average frequency (hits per second)
-  - best 3-second burst
-- Microphone-based hit detection adapted from the tuned desktop Python version
-- Bundled light-hit template based on `hit_template_light.npz`
+- Dual-glove Bluetooth connection for devices named `BOXING#R######` and `BOXING#L######`.
+- Emotion relief modes: Color Graffiti, Emotion Champ, Free Boxing.
+- Fitness fat-burning modes: Rapid Fat Burn, Fat-Burn Challenge, Fat Burn Sparring.
+- Sensitivity setting from 0 to 100, saved locally and written to the gloves when connected.
+- Workout results, leaderboard, profile, achievements, privacy policy, and user agreement.
 
 Notes for opening/building:
 
 - Open the `boxingfitness-android` folder in Android Studio.
 - Let Android Studio sync the project and download the required Android/Gradle components.
-- After sync, run the app on an Android phone and grant microphone permission.
+- Run the app on an Android phone or tablet and grant Bluetooth permissions.
 
 Related project docs:
 
-- See the copied project documents under `D:\2026\202604\0425\boxingfitness-docs`.
+- User guide: `D:\2026\202604\0425\boxingfitness-docs\BoxingFitness_用户使用说明.md`
