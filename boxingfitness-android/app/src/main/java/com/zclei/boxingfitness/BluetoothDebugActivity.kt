@@ -43,6 +43,7 @@ import java.util.UUID
 class BluetoothDebugActivity : AppCompatActivity() {
     private val mainHandler = Handler(Looper.getMainLooper())
     private val targetPrefix = "BOXING"
+    private val deviceNameRegex = Regex("^BOXING#[RL][0-9A-Z]{6}$", RegexOption.IGNORE_CASE)
     private val serviceUuid = uuid16("FFE0")
     private val readUuid = uuid16("FFE1")
     private val writeUuid = uuid16("FFE1")
@@ -243,8 +244,8 @@ class BluetoothDebugActivity : AppCompatActivity() {
         gyroOnButton.setOnClickListener { sendGyroCommandFromUi(enabled = true) }
         gyroOffButton.setOnClickListener { sendGyroCommandFromUi(enabled = false) }
 
-        accelValue = wideMetric("有效数据", "数据0 包数 --    数据1 电量 --    数据2 次数 --    数据4 力度 --")
-        angleValue = wideMetric("忽略数据", "数据3 / 数据5 / 数据6 / 数据7 已忽略")
+        accelValue = wideMetric("有效数据", "数据0 包数 --    数据1 电量 --    数据2 次数 --    数据6/7 力度 --")
+        angleValue = wideMetric("忽略数据", "数据3 / 数据4 / 数据5 已忽略")
         rawValue = wideMetric("原始帧", "--")
         metrics.addView(accelValue)
         metrics.addView(angleValue)
@@ -387,7 +388,7 @@ class BluetoothDebugActivity : AppCompatActivity() {
         val address = result.device.address.orEmpty()
         val name =
             scanNames(result)
-                .firstOrNull { it.startsWith(targetPrefix, ignoreCase = true) }
+                .firstOrNull { deviceNameRegex.matches(it) }
                 ?: return null
         return DeviceCandidate(
             device = result.device,
@@ -893,7 +894,7 @@ class BluetoothDebugActivity : AppCompatActivity() {
                         roll = 0,
                         pitch = 0,
                         yaw = 0,
-                        pressure = frame[7].u(),
+                        pressure = frame[9].u() or (frame[10].u() shl 8),
                     ),
                 ),
         )
@@ -902,19 +903,26 @@ class BluetoothDebugActivity : AppCompatActivity() {
     private fun renderPacket(packet: BoxingPacket) {
         detectHitFromPunchCount(packet)
         val latest = packet.samples.lastOrNull() ?: return
-        batteryValue.text = "电源状态\n${packet.powerState}"
+        batteryValue.text = "电源状态\n${formatPowerState(packet.powerState)}"
         chargeValue.text = "帧序号\n${packet.frameSeq}"
-        pressureValue.text = "拳击力度\n${latest.pressure}"
+        pressureValue.text = "拳击力度\n${latest.pressure} N"
         punchValue.text = "拳击次数\n${packet.punches}"
-        accelValue.text = "有效数据\n数据0 包数 ${packet.frameSeq}    数据1 电量 ${packet.powerState}    数据2 次数 ${packet.punches}    数据4 力度 ${latest.pressure}"
-        angleValue.text = "忽略数据\n数据3 / 数据5 / 数据6 / 数据7 已忽略"
+        accelValue.text = "有效数据\n数据0 包数 ${packet.frameSeq}    数据1 电量 ${formatPowerState(packet.powerState)}    数据2 次数 ${packet.punches}    数据6/7 力度 ${latest.pressure} N"
+        angleValue.text = "忽略数据\n数据3 / 数据4 / 数据5 已忽略"
         rawValue.text = "原始帧\n${packet.rawHex}"
         val now = System.currentTimeMillis()
         if (now - lastPacketLogAtMs >= 1000L) {
             lastPacketLogAtMs = now
-            appendLog("cmd=0x${packet.command.toString(16).uppercase()} seq=${packet.frameSeq} battery=${packet.powerState} gyroPunches=${packet.punches} gyroForce=${latest.pressure}")
+            appendLog("cmd=0x${packet.command.toString(16).uppercase()} seq=${packet.frameSeq} battery=${formatPowerState(packet.powerState)} gyroPunches=${packet.punches} gyroForce=${latest.pressure}N")
         }
     }
+
+    private fun formatPowerState(powerState: Int): String =
+        when (powerState) {
+            101 -> "正在充电"
+            102 -> "充满"
+            else -> "${powerState.coerceIn(0, 100)}%"
+        }
 
     private fun detectHitFromPunchCount(packet: BoxingPacket) {
         val previous = lastPunchCount

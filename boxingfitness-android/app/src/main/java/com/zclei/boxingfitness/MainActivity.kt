@@ -1949,7 +1949,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateHeaderBleBattery(packet: BoxingBleManager.BoxingPacket) {
-        val power = packet.powerState.coerceIn(0, 100)
+        val power = packet.powerState.coerceIn(0, 102)
         when (packet.hand) {
             BoxingBleManager.BoxingHand.Left -> leftBleBatteryPercent = power
             BoxingBleManager.BoxingHand.Right -> rightBleBatteryPercent = power
@@ -2038,7 +2038,7 @@ class MainActivity : AppCompatActivity() {
         }
         boxingBleMetricView.text =
             "$hand  陀螺仪拳击次数 ${packet.punches}\n" +
-                "陀螺仪拳击力度 ${packet.punchForce}    电量 ${packet.powerState.coerceIn(0, 102)}"
+                "陀螺仪拳击力度 ${packet.punchForce} N    电量 ${formatBlePowerState(packet.powerState)}"
         if (hit) {
             boxingBleMetricView.background = roundedBackground("#A71920", "#FFB3B3", 18)
             boxingBleMetricView.postDelayed({
@@ -2048,6 +2048,13 @@ class MainActivity : AppCompatActivity() {
             }, 160L)
         }
     }
+
+    private fun formatBlePowerState(powerState: Int): String =
+        when (powerState) {
+            101 -> "正在充电"
+            102 -> "充满"
+            else -> "${powerState.coerceIn(0, 100)}%"
+        }
 
     private fun compactWeightedParams(
         weight: Float,
@@ -11633,7 +11640,7 @@ private class BatteryStatusIndicatorView(
     context: android.content.Context,
     private var handLabel: String,
 ) : View(context) {
-    private var percent: Int? = null
+    private var batteryState: Int? = null
     private val strokePaint =
         Paint(Paint.ANTI_ALIAS_FLAG).apply {
             style = Paint.Style.STROKE
@@ -11659,8 +11666,8 @@ private class BatteryStatusIndicatorView(
     }
 
     fun setBattery(value: Int?) {
-        percent = value?.coerceIn(0, 100)
-        contentDescription = "$handLabel ${percent?.let { "$it%" } ?: "--"}"
+        batteryState = value?.coerceIn(0, 102)
+        contentDescription = "$handLabel ${batteryDisplayText()}"
         invalidate()
     }
 
@@ -11673,12 +11680,15 @@ private class BatteryStatusIndicatorView(
         bodyRect.set(bodyLeft, bodyTop, bodyRight, bodyBottom)
         terminalRect.set(bodyRight + width * 0.015f, height * 0.36f, width * 0.98f, height * 0.64f)
 
-        val level = percent
+        val state = batteryState
+        val level = state?.coerceIn(0, 100)
         val outlineColor =
             when {
-                level == null -> Color.parseColor("#8A97A3")
-                level <= 20 -> Color.parseColor("#FF4B55")
-                level <= 45 -> Color.parseColor("#FFD060")
+                state == null -> Color.parseColor("#8A97A3")
+                state == 101 -> Color.parseColor("#66D6FF")
+                state == 102 -> Color.parseColor("#7DFFAF")
+                state <= 20 -> Color.parseColor("#FF4B55")
+                state <= 45 -> Color.parseColor("#FFD060")
                 else -> Color.parseColor("#28A8FF")
             }
         strokePaint.color = outlineColor
@@ -11690,7 +11700,13 @@ private class BatteryStatusIndicatorView(
 
         if (level != null) {
             val innerPadding = height * 0.14f
-            val fillWidth = (bodyRect.width() - innerPadding * 2f) * (level / 100f)
+            val fillRatio =
+                when (state) {
+                    101 -> 0.65f
+                    102 -> 1.0f
+                    else -> level / 100f
+                }
+            val fillWidth = (bodyRect.width() - innerPadding * 2f) * fillRatio
             fillRect.set(
                 bodyRect.left + innerPadding,
                 bodyRect.top + innerPadding,
@@ -11701,10 +11717,22 @@ private class BatteryStatusIndicatorView(
             canvas.drawRoundRect(fillRect, height * 0.06f, height * 0.06f, fillPaint)
         }
 
-        textPaint.textSize = height * 0.36f
-        val numberText = level?.toString() ?: "--"
-        val display = "$handLabel $numberText"
+        val display = "$handLabel ${batteryDisplayText()}"
+        textPaint.textSize =
+            if (display.length >= 6) {
+                height * 0.27f
+            } else {
+                height * 0.36f
+            }
         val baseline = bodyRect.centerY() - (textPaint.descent() + textPaint.ascent()) / 2f
         canvas.drawText(display, bodyRect.centerX(), baseline, textPaint)
     }
+
+    private fun batteryDisplayText(): String =
+        when (batteryState) {
+            null -> "--"
+            101 -> "正在充电"
+            102 -> "充满"
+            else -> batteryState?.coerceIn(0, 100)?.toString().orEmpty()
+        }
 }

@@ -764,7 +764,7 @@ class BoxingBleManager(
             frameSeq = frame[3].u(),
             powerState = frame[4].u(),
             punches = frame[5].u(),
-            punchForce = frame[7].u(),
+            punchForce = frame[9].u() or (frame[10].u() shl 8),
             sample =
                 BoxingSample(
                     ax = 0,
